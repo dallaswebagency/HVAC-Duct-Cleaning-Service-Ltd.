@@ -67,7 +67,7 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 /* hero */
 .hero{position:relative;background:var(--ink);color:#fff;overflow:hidden}
 .hero-img{position:absolute;inset:0 0 0 38%;}
-.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
 .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(30,31,29,.55) 30%,rgba(30,31,29,.05) 70%)}
 .swoosh{position:absolute;left:-180px;top:-120px;width:900px;opacity:.9;pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;padding:96px 0 120px}
@@ -111,7 +111,7 @@ section{position:relative}
 .sector::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(20,21,20,.92))}
 .sector:hover img{transform:scale(1.06);opacity:.6}
 .sector .in{position:absolute;inset:auto 0 0 0;padding:30px;z-index:2}
-.sector .num{position:absolute;top:24px;left:28px;z-index:2;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--cyan);letter-spacing:.14em}
+.sector .num{position:absolute;top:24px;left:28px;z-index:2;background:rgba(20,21,20,.75);padding:6px 10px;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--cyan);letter-spacing:.14em}
 .sector h3{font-size:44px}
 .sector p{font-size:15px;color:#C9D2D6;margin-top:8px;max-height:0;overflow:hidden;transition:max-height .5s}
 .sector:hover p{max-height:120px}
@@ -156,7 +156,7 @@ section{position:relative}
 
 /* proof / about */
 .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.ba{position:relative;aspect-ratio:2/3;max-height:640px;width:100%;overflow:hidden;user-select:none;--cut:34px;background:#111}
+.ba{position:relative;aspect-ratio:3/4;max-height:640px;width:100%;overflow:hidden;user-select:none;--cut:34px;background:#111}
 .ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ba .top{clip-path:inset(0 calc(100% - var(--pos,50%)) 0 0)}
 .ba .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:3px;background:#fff;transform:translateX(-50%);pointer-events:none}
